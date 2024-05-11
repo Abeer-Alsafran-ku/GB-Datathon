@@ -22,7 +22,7 @@ import requests
 
 
 #actual fucntion:------------------
-
+# API used: https://weatherstack.com/
 def get_weather_info(arguments):
     # Parse the JSON arguments
     params = json.loads(arguments)
