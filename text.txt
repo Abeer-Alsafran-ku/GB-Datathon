@@ -1,0 +1,64 @@
+function description:----------------
+
+
+    {
+        "name": "get_flight_info",
+        "description": "Get flight information between two locations, this is used for flight info only, not booking, destination",
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "loc_origin": {
+                    "type": "string",
+                    "description": "The departure country",
+                },
+                "loc_destination": {
+                    "type": "string",
+                    "description": "The destination country",
+                },
+            },
+            "required": ["loc_origin", "loc_destination"],
+        }
+    },
+
+
+
+
+actual fucntion:------------------
+
+def get_flight_info(arguments):
+    # Parse the JSON arguments
+    params = json.loads(arguments)
+    # Extract parameters
+    loc_origin = params.get("loc_origin")
+    loc_destination = params.get("loc_destination")
+
+    # Get flight information between two locations
+    
+    params = {
+    'access_key': 'f1d23ab03a88741c8ba97af68561247e'
+    }
+    api_result = requests.get('http://api.aviationstack.com/v1/flights', params)
+    api_response = api_result.json()
+    
+    for flight in api_response['data']:
+
+        if target.lower() in str(flight['arrival']['airport']).lower() and origin.lower() in str(flight['departure']['airport']).lower() :
+            print( u'%s flight %s from %s (%s) and time =%s to %s (%s) ' %(
+                flight['airline']['name'],
+                flight['flight']['iata'],
+                flight['departure']['airport'],
+                flight['departure']['iata'],
+                flight['departure']['scheduled'],
+                flight['arrival']['airport'],
+                flight['arrival']['iata']))
+            
+
+    flight_info = {
+        "loc_origin": loc_origin,
+        "loc_destination": loc_destination,
+        "datetime": str(datetime.now() + timedelta(hours=2)),
+        "airline": "KLM",
+        "Flight": "KL263"
+    }
+
+    return json.dumps(flight_info)
