@@ -18,7 +18,7 @@ Finally, participants should present the results achieved with their solution. T
 - Feel free to collaborate with team members and leverage external resources, but make sure to acknowledge contributions appropriately.
 - Have fun, learn, and make the most out of this datathon experience! 🎉
 
-![Gulf Bank Datathon](your_image_url_here)
+![Gulf Bank Datathon](https://images.spr.so/cdn-cgi/imagedelivery/j42No7y-dcokJuNgXeA0ig/c7e0024e-5af9-44fa-8483-19275432ebf1/Website_banner/public)
 
 Good luck to all participants! 🍀
 
