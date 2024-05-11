@@ -1,4 +1,4 @@
-# Gulf Bank Datathon - GenAi Track 🏆
+# Gulf Bank Datathon 2024 - GenAi Track 🏆
 ![Gulf Bank Datathon](https://images.spr.so/cdn-cgi/imagedelivery/j42No7y-dcokJuNgXeA0ig/c7e0024e-5af9-44fa-8483-19275432ebf1/Website_banner/public)
 
 ## Description 🚀
